@@ -1,0 +1,46 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    margin-top: 30px;
+    border-collapse: collapse; /*remove o espaço entre tds*/
+    border: solid 1px #DDDDDD;
+}
+tr{
+    border: solid 1px #DDDDDD;
+
+}
+td{
+    padding: 5px;
+    font-weight: 700;
+}
+.smooth{
+    background-color: aqua;
+}
+
+.podio{
+    color:  #003366;
+    
+}
+.quarto-lugar{
+    color: #1398BE;
+}
+.intermediarios{
+    color: #DE9800;
+}
+.zona-risco{
+    color: #CCCCCC;
+}
+.rebaixamento{
+    color: #C91B04;
+}
+
