@@ -11,21 +11,46 @@ body {
 }
 
 table{
-    margin-top: 30px;
+    margin: 30px 0;
     border-collapse: collapse; /*remove o espaço entre tds*/
     border: solid 1px #DDDDDD;
+    /* width: 400px; */
 }
 tr{
     border: solid 1px #DDDDDD;
 
 }
+
+tr td:first-child{
+    /* background-color: green; */
+     width: 10px; 
+}
+td:first-child{ 
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+}
 td{
     padding: 5px;
+    
+}
+thead>tr>th:last-child{
+    /* background-color: #1398BE; */
+    width: 25px;
+
+}
+thead{
+    height: 25px;
+}
+thead>tr>th{
+    /* background-color: #1398BE; */
+    font-size: 13px;
+    color: #999999;
     font-weight: 700;
+    text-align: center;
+    width: 20px;
 }
-.smooth{
-    background-color: aqua;
-}
+
 
 .podio{
     color:  #003366;
@@ -43,4 +68,88 @@ td{
 .rebaixamento{
     color: #C91B04;
 }
+tbody>tr>td{
+    /* background-color: red;   */
+   font-size: 14px;
+   color: #666;
+   text-align: center;
+    /* width: 200px;  */
+   
+}
+tbody>tr:nth-child(4), tbody>tr:nth-child(16){
+    /* background-color: #333; */
+    border-bottom: 2px solid #CCCCCC;
 
+}
+tbody>tr>td:nth-child(2){
+     /* background-color: blue;  */
+     font-size: 14px;
+     color: #666;
+     font-weight: 700;
+     text-align: left;
+}
+tbody>tr>td:nth-child(3){
+     /* background-color: red;  */
+     font-size: 14px;
+     color: black;
+     font-weight: 700;
+     text-align: center;
+     
+}
+
+.smooth{
+    background-color: #F7F7F7;
+}
+tfoot th{
+    /* background-color: red; */
+    font-weight: 400;
+    font-size: 10px;
+    color: #8F8F8F;
+    text-align: left;
+}
+
+
+tfoot th>div:last-child{
+    /* background-color: red;  */
+   
+    font-size: 10px;
+    color: #555;
+    font-weight: 400px;
+    text-align: left;
+}
+
+
+tfoot th div span{
+    font-size: 10px;
+    color: #555;
+    font-weight: bold;
+    text-align: left;
+    padding: 0px;
+}
+
+.legenda{
+    font-size: 10px;
+    display: inline-flex;
+
+
+}
+tfoot th{
+    padding: 6px;
+}
+tfoot th div *{
+    padding-right: 10px;
+}
+
+.teste{
+    display: inline-block;
+
+    padding: 0;
+    margin-right: 5px;
+    border-radius: 25%;
+
+    min-width: 8px;
+    min-height: 8px;
+
+    background-color: blue;
+
+}
