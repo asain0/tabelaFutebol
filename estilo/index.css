@@ -1,155 +1,168 @@
+:root{
+    --rebaixamento-collor: #C91B04;
+    --libertadores-collor: #003366;
+    --pre-libertadores-collor:#1398BE;
+    --sul-americana-collor: #DE9800;
+    --zona-risco:#CCCCCC;
+    --smooth-collor:#F7F7F7;
+    --default-border-collor: #DDD;
+}
+
 *{
+    font-family: Arial, Helvetica, sans-serif;
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+
     display: flex;
     justify-content: center;
 }
 
 table{
-    margin: 30px 0;
+    margin: 3rem 0;
     border-collapse: collapse; /*remove o espaço entre tds*/
-    border: solid 1px #DDDDDD;
-    /* width: 400px; */
-}
-tr{
-    border: solid 1px #DDDDDD;
-
+    border: 1px solid var(--default-border-collor);
 }
 
-tr td:first-child{
-    /* background-color: green; */
-     width: 10px; 
-}
-td:first-child{ 
-    font-size: 18px;
-    font-weight: 700;
-    text-align: center;
-}
-td{
-    padding: 5px;
-    
-}
-thead>tr>th:last-child{
-    /* background-color: #1398BE; */
-    width: 25px;
-
-}
 thead{
-    height: 25px;
+    height: 2.5rem;
 }
-thead>tr>th{
-    /* background-color: #1398BE; */
-    font-size: 13px;
+
+tr{
+    border: solid 1px var(--default-border-collor);
+}
+
+td{
+    padding: 0.5rem;
+    min-width: 2rem;
+}
+
+thead tr th{
+    font-size: 1.3rem;
     color: #999999;
     font-weight: 700;
     text-align: center;
-    width: 20px;
+
+    width: 2rem;
 }
 
+thead tr th:last-child{
+    width: 5.5rem;
+}
 
-.podio{
-    color:  #003366;
+tr td:first-child{
+    font-size: 1.8rem;
+    font-weight: 700;
+    width: 1rem; 
+    text-align: center;
+}
     
+tbody tr td{
+        font-size: 1.4rem;
+        color: #666;
+        text-align: center;
 }
-.quarto-lugar{
-    color: #1398BE;
-}
-.intermediarios{
-    color: #DE9800;
-}
-.zona-risco{
-    color: #CCCCCC;
-}
-.rebaixamento{
-    color: #C91B04;
-}
-tbody>tr>td{
-    /* background-color: red;   */
-   font-size: 14px;
-   color: #666;
-   text-align: center;
-    /* width: 200px;  */
-   
-}
-tbody>tr:nth-child(4), tbody>tr:nth-child(16){
-    /* background-color: #333; */
-    border-bottom: 2px solid #CCCCCC;
 
+tbody tr:nth-child(4), tbody tr:nth-child(16){
+    border-bottom: 2px solid var(--zona-risco);
 }
-tbody>tr>td:nth-child(2){
-     /* background-color: blue;  */
-     font-size: 14px;
+
+tbody tr td:nth-child(2){
+     font-size: 1.4rem;
      color: #666;
      font-weight: 700;
      text-align: left;
 }
-tbody>tr>td:nth-child(3){
-     /* background-color: red;  */
-     font-size: 14px;
+
+tbody tr td:nth-child(3){
+     font-size: 1.4rem;
      color: black;
      font-weight: 700;
      text-align: center;
      
 }
 
-.smooth{
-    background-color: #F7F7F7;
-}
 tfoot th{
-    /* background-color: red; */
     font-weight: 400;
-    font-size: 10px;
+    font-size: 1rem;
     color: #8F8F8F;
     text-align: left;
 }
 
-
 tfoot th>div:last-child{
-    /* background-color: red;  */
-   
-    font-size: 10px;
+    font-size: 1rem;
     color: #555;
-    font-weight: 400px;
+    font-weight: 400;
     text-align: left;
 }
 
+tfoot th{
+    padding: 0.6rem;
+}
+
+tfoot th div *{
+    padding-right: 1rem;
+}
 
 tfoot th div span{
-    font-size: 10px;
+    font-size: 1rem;
     color: #555;
     font-weight: bold;
     text-align: left;
-    padding: 0px;
+
+    padding: 0rem;
 }
 
 .legenda{
-    font-size: 10px;
+    font-size: 1rem;
     display: inline-flex;
-
-
 }
-tfoot th{
-    padding: 6px;
-}
-tfoot th div *{
-    padding-right: 10px;
-}
-
-.teste{
+.square{
     display: inline-block;
 
     padding: 0;
-    margin-right: 5px;
+    margin-right: 0.5rem;
     border-radius: 25%;
 
-    min-width: 8px;
-    min-height: 8px;
+    min-width: 0.8rem;
+    min-height: 0.8rem;
+}
 
-    background-color: blue;
+.square.podio{
+    background-color: var(--libertadores-collor);
+}
+.square.pre-libertadores{
+    background-color: var(--pre-libertadores-collor);
+}
+.square.sul-americana{
+    background-color: var(--sul-americana-collor);
+}
+.square.rebaixamento{
+    background-color: var(--rebaixamento-collor);
+}
 
+.podio{
+    color:  var(--libertadores-collor);
+}
+.quarto-lugar{
+    color: var(--pre-libertadores-collor);
+}
+.intermediarios{
+    color: var(--sul-americana-collor)
+}
+.zona-risco{
+    color: var(--zona-risco);
+    
+}
+.rebaixamento{
+    color: var(--rebaixamento-collor);
+}
+
+.smooth{
+    background-color: var(--smooth-collor);
 }
